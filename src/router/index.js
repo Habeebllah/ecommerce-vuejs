@@ -2,7 +2,12 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Contact from '../views/Contact.vue'
 import AccountDashboard from '../views/AccountDashboard.vue'
+import AccountOrder from '../views/AccountOrder.vue'
+import AccountDetails from '../views/AccountDetails.vue'
+import SignIn from '../views/SignIn.vue'
+import SignUp from '../views/SignUp.vue'
 import Product from '../views/Product.vue'
+
 const routes = [
   {
     path: '/',
@@ -21,6 +26,30 @@ const routes = [
     name: 'Product',
     component: Product
   },
+
+  {
+    path: '/sign-in',
+    name: 'SignIn',
+    component: SignIn
+  },
+
+  {
+    path: '/sign-up',
+    name: 'SignUp',
+    component: SignUp
+  },
+  {
+    path: '/accountorder',
+    name: 'AccountOrder',
+    component: AccountOrder
+  },
+
+  {
+    path: '/accountdetails',
+    name: 'AccountDetails',
+    component: AccountDetails
+  },
+
   {
     path: '/accountdashboard',
     name: 'AccountDashboard',
