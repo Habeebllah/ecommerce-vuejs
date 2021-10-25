@@ -7,7 +7,10 @@ import AccountDetails from '../views/AccountDetails.vue'
 import SignIn from '../views/SignIn.vue'
 import SignUp from '../views/SignUp.vue'
 import Product from '../views/Product.vue'
-
+import Cart from '../views/Cart.vue'
+import CheckoutComplete from '../views/CheckoutComplete.vue'
+import CheckoutDetails from '../views/CheckoutDetails.vue'
+import CheckoutPayment from '../views/CheckoutPayment.vue'
 const routes = [
   {
     path: '/',
@@ -25,6 +28,30 @@ const routes = [
     path: '/product',
     name: 'Product',
     component: Product
+  },
+
+  {
+    path: '/cart',
+    name: 'Cart',
+    component: Cart
+  },
+
+  {
+    path: '/checkout-payment',
+    name: 'CheckoutPayment',
+    component: CheckoutPayment
+  },
+
+  {
+    path: '/checkout-details',
+    name: 'CheckoutDetails',
+    component: CheckoutDetails
+  },
+
+  {
+    path: '/checkout-complete',
+    name: 'CheckoutComplete',
+    component: CheckoutComplete
   },
 
   {
