@@ -1,7 +1,9 @@
 <template>
-    <div className="page-wrapper">
-      <div className="page-content">
-        <SubHeader name="Contact" />
+    <Navbar/>
+     <div className="page-wrapper">
+        <div className="page-content">
+     
+          <SubHeader name="Contact" />
         <section className="py-4">
           <div className="container">
             <h3 className="d-none">Google Map</h3>
@@ -10,7 +12,7 @@
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126678.17629394858!2d3.2963686638558953!3d7.161444985244263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103a4bf6995dfc7f%3A0x6734fcf62892478d!2sAbeokuta!5e0!3m2!1sen!2sng!4v1632572269127!5m2!1sen!2sng"
                 className="w-100"
                 height="450"
-                style={{border:0}}
+                style="border:0"
                 allowfullscreen=""
                 loading="lazy"
               ></iframe>
@@ -80,17 +82,23 @@
             </div>
           </div>
         </section>
+     <Footer/>
+     </div>
       </div>
-    </div>
+  
 </template>
 
 
 <script>
 import SubHeader from '../components/SubHeader.vue'
+import Navbar from '../components/Navbar.vue'
+import Footer from '../components/Footer.vue'
 export default{
     name: "Contact",
     components: {
         SubHeader,
+        Navbar,
+        Footer,
     },
     
 }

@@ -22,7 +22,7 @@
                 </label>
                 
                 <div className="logo d-none d-lg-flex">
-                  <a to="/">
+                  <router-link to="/">
                     
                     <img
                       src="assets/images/logo-icon.png"
@@ -30,7 +30,7 @@
                       alt=""
                     />
                     
-                  </a>
+                  </router-link>
                 </div>
               </div>
             </div>
@@ -64,17 +64,17 @@
                 <nav className="navbar navbar-expand">
                   <ul className="navbar-nav ms-auto">
                     <li className="nav-item">
-                      <a
+                      <router-link
                         to="/sign-in"
                         className="nav-link cart-link"
                       >
                         <i className="bx bx-user"></i>
-                      </a>
+                      </router-link>
                     </li>
 					
 
                     <li className="nav-item">
-                      <a
+                      <router-link
                         to="/cart"
                         className="nav-link  position-relative cart-link"
                       >
@@ -84,7 +84,7 @@
                           </span>
                         
                         <i className="bx bx-shopping-bag"></i>
-                      </a>
+                      </router-link>
                     </li>
                   </ul>
                 </nav>
@@ -103,26 +103,26 @@
             <ul className="navbar-nav">
               <li className="nav-item active">
                 
-                <a className="nav-link links" to="/">
+                <router-link className="nav-link links" to="/">
                   Home
-                </a>
+                </router-link>
               </li>
               <li className="nav-item">
-                <a className="nav-link links" to="/products">
+                <router-link className="nav-link links" to="/product">
                   Product
-                </a>
+                </router-link>
               </li>
               <li className="nav-item">
                 
-                <a className="nav-link links" to="/contact">
+                <router-link className="nav-link links" to="/contact">
                   Contact Us
-                </a>
+                </router-link>
               </li>
               <li className="nav-item">
                 
-                <a className="nav-link links" to="/account-dashboard">
+                <router-link className="nav-link links" to="/accountdashboard">
                   My Account
-                </a>
+                </router-link>
               </li>
             </ul>
           </nav>

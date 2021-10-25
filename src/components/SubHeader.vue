@@ -7,9 +7,9 @@
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb mb-0 p-0">
                     <li class="breadcrumb-item">
-                      <Link to="/" style="textDecoration:none">
+                      <router-link to="/" style="textDecoration:none">
                         <i class="bx bx-home-alt"></i> Home
-                      </Link>
+                      </router-link>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
                       {{name}}
