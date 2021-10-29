@@ -11,6 +11,7 @@ import Cart from '../views/Cart.vue'
 import CheckoutComplete from '../views/CheckoutComplete.vue'
 import CheckoutDetails from '../views/CheckoutDetails.vue'
 import CheckoutPayment from '../views/CheckoutPayment.vue'
+import AddProduct from '../views/AddProduct.vue'
 const routes = [
   {
     path: '/',
@@ -75,6 +76,12 @@ const routes = [
     path: '/accountdetails',
     name: 'AccountDetails',
     component: AccountDetails
+  },
+
+  {
+    path: '/addproduct',
+    name: 'AddProduct',
+    component: AddProduct
   },
 
   {

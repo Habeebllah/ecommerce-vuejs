@@ -8,7 +8,7 @@
         </div>
         <span>
           <img
-            src="assets/images/products/01.png"
+        src={{image_url}}
             className="card-img-top"
             alt="..."
           />
@@ -16,16 +16,16 @@
         <div className="card-body">
           <div className="product-info">
             <a href="javascript:;">
-              <p className="product-catergory font-13 mb-1"><b>Fashion</b></p>
+              <p className="product-catergory font-13 mb-1"><b>{{category}}</b></p>
             </a>
             <a href="javascript:;">
-              <h6 className="product-name mb-2">T-shirt Branded</h6>
+              <h6 className="product-name mb-2">{{name}}</h6>
             </a>
             <div className="d-flex align-items-center">
               <div className="mb-1 product-price">
                 
-                <span className="me-1 text-decoration-line-through">₦5000</span>
-                <span className="fs-5">₦4500</span>
+                <span className="me-1 text-decoration-line-through">₦{{price}}</span>
+                <span className="fs-5">₦{{old_price}}</span>
               </div>
               <div className="cursor-pointer ms-auto">
                 
@@ -56,6 +56,16 @@
 
 export default {
     name: "ProductCard",
+    /* props: {
+        name: {type: String},
+        category: {type: String},
+        price: {type: Number},
+        old_price: {type: Number},
+        quantity: {type: Number},
+        image_url: {type: String},
+        description: {type: String}
 
+    }
+ */
 }
 </script>

@@ -992,9 +992,7 @@ ul.categories-list li {
 }
 /* Authentication */
 
-.section-authentication-signin {
-	height: 100vh
-}
+
 .authentication-forgot {
 	height: 100vh;
 	padding: 0 1rem
